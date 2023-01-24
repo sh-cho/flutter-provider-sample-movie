@@ -11,7 +11,8 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    _countProvider = Provider.of<CountProvider>(context);
+    debugPrint("[Home] build!");
+    _countProvider = Provider.of<CountProvider>(context, listen: false);
 
     return Scaffold(
       appBar: AppBar(
